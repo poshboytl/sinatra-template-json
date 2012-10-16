@@ -1,0 +1,20 @@
+= Simple Sinatra Application Template
+
+A super basic Sinatra application template. Output is simple JSON (prettified when in development) via MultiJSON so you can use the library of your choice (default is OJ). Makes it easy to get a simple API up and running for whatever it is you're building.
+
+Requires Ruby 1.9.3 and is ready for Heroku's Cedar stack.
+
+== Configuration
+
+All configuration is done in <tt>environment.rb</tt>. There is no database, this is pure basics.
+
+Add your controller actions and routes to in <tt>application.rb</tt>. Views, etc are not included because we're just outputting JSON.
+
+== Getting Started
+
+  bundle install
+  shotgun
+
+You can use foreman but the default Procfile runs in production mode (as that's what Heroku uses).
+
+(c) 2012 Paulo Fierro. This code is distributed under the MIT license.
